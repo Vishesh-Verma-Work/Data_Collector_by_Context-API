@@ -4,7 +4,7 @@ export const TodoContext = createContext({
     todos : [
         {
             id : 1,
-            tofo: "Todo msz",
+            todo: "Todo msz",
             completed : false,
         }
     ],
@@ -18,3 +18,5 @@ export const TodoContext = createContext({
 export const useTodo = () => {
     return useContext(TodoContext)
 }
+
+export const TodoProvider = TodoContext.Provider
